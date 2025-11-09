@@ -21,7 +21,7 @@ public class TwoSum {
         }
         return new int[]{};
     }
-
+    // mainメソッド
     public static void main(String[] args) {
         TwoSum ts = new TwoSum();
 
