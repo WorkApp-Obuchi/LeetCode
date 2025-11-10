@@ -14,7 +14,7 @@ public class AnotherRemoveElement {
         return k;
     }
     public static void main(String[] args) {
-        RemoveElement re = new RemoveElement();
+        AnotherRemoveElement re = new AnotherRemoveElement();
 
         int[] nums1 = {3,2,2,3};
         int val1 = 3;
