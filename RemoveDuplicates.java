@@ -15,13 +15,6 @@ public class RemoveDuplicates {
         for(int num : nums) {
             set.add(num);
         }
-        // setを変更しただけで、配列は変わっていない
-        // LeetCodeの採点が配列の中身もチェックするから、戻り値だけでなく配列の状態も採点対象
-        // 配列の値を変える
-        int index = 0;
-        for(int num: set) {
-            nums[index++] = num;
-        }
         return set.size();
     }
 
