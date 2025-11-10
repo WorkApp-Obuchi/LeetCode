@@ -4,23 +4,15 @@ public class RemoveElement {
     public int removeElement(int[] nums, int val) {
         if(nums == null || nums.length == 0) return 0;
 
-        int start = 0;
-        int end = 0;
+        int k = 0;
 
-        while(end < nums.length) {
-            if(nums[end] != val) {
-                swap(nums, start, end);
-                start++;
+        for(int i = 0; i < nums.length; i++) {
+            if(nums[i] != val) {
+                nums[k] = nums[i];
+                k++;
             }
-            end++;
         }
-        return start;
-    }
-
-    private void swap(int[] nums, int start, int end) {
-        int tmp = nums[start];
-        nums[start] = nums[end];
-        nums[end] = tmp;
+        return k;
     }
 
     public static void main(String[] args) {
