@@ -12,7 +12,9 @@ public class MoveZeros2 {
         for(int runner = 0; runner < nums.length; runner++) {
             // swapするのはrunner != 0の時だけ
             if(nums[runner] != 0) {
-                swap(nums, nonZero, runner);
+                if(runner != nonZero) {
+                    swap(nums, nonZero, runner);
+                }
                 nonZero++;
             }
         }
