@@ -1,3 +1,4 @@
+import common.ArrayToTree;
 import common.TreeNode;
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -27,33 +28,6 @@ public class InvertBinaryTree {
         return root;
     }
 
-    // 配列から TreeNode を作成（null は -1 で表す）
-    public static TreeNode arrayToTree(Integer[] arr) {
-      if (arr.length == 0) return null;
-
-      TreeNode root = new TreeNode(arr[0]);
-      Queue<TreeNode> queue = new LinkedList<>();
-      queue.offer(root);
-
-      int i = 1;
-      while (i < arr.length) {
-          TreeNode current = queue.poll();
-
-          if (arr[i] != null) {
-              current.left = new TreeNode(arr[i]);
-              queue.offer(current.left);
-          }
-          i++;
-
-          if (i < arr.length && arr[i] != null) {
-              current.right = new TreeNode(arr[i]);
-              queue.offer(current.right);
-          }
-          i++;
-        }
-      return root;
-    }
-
     // 木をレベル順で出力（ArrayListで表す）
     public static List<Integer> treeToList(TreeNode root) {
       List<Integer> result = new ArrayList<>();
@@ -77,19 +51,19 @@ public class InvertBinaryTree {
     public static void main(String[] args) {
       // 例 1
       Integer[] arr1 = {4,2,7,1,3,6,9};
-      TreeNode root1 = arrayToTree(arr1);
+      TreeNode root1 = ArrayToTree.arrayToTree(arr1);
       invertTree(root1);
       System.out.println(treeToList(root1)); // [4,7,2,9,6,3,1]
 
       // 例 2
       Integer[] arr2 = {2,1,3};
-      TreeNode root2 = arrayToTree(arr2);
+      TreeNode root2 = ArrayToTree.arrayToTree(arr2);
       invertTree(root2);
       System.out.println(treeToList(root2)); // [2,3,1]
 
       // 例 3
       Integer[] arr3 = {};
-      TreeNode root3 = arrayToTree(arr3);
+      TreeNode root3 = ArrayToTree.arrayToTree(arr3);
       invertTree(root3);
       System.out.println(treeToList(root3)); // []
     }
