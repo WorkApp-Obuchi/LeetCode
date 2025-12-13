@@ -1,9 +1,3 @@
-class ListNode {
-    int val;
-    ListNode next;
-    ListNode(int x) { val = x; }
-}
-
 class RemoveNthNodeFromEndofList {
     public static ListNode removeNthFromEnd(ListNode head, int n) {
         ListNode dummy = new ListNode(0); //[0]→[1]→[2]

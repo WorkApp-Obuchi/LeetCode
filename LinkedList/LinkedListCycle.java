@@ -5,17 +5,6 @@
  @return true　か false
  */
 
- 
-class ListNode {
-    int val;
-    ListNode next;
-    ListNode(int x) {
-        val = x;
-        next = null;
-    }
-}
-
-
 public class LinkedListCycle {
   public static boolean hasCycle(ListNode head) {
         ListNode slow = head; //一つ進むノード作成

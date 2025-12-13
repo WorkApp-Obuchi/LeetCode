@@ -5,13 +5,6 @@
  @param headB リストBの先頭ノード
  @return 最初に交差するノード（交差が無ければ null）
  */
-  class ListNode {
-      int val;
-      ListNode next;
-      ListNode(int x) {
-          val = x;
-      }
-  }
 
 public class IntersectionofTwoLinkedLists {
   public static ListNode getIntersectionNode(ListNode headA, ListNode headB) {

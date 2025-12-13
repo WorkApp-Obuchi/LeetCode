@@ -6,15 +6,6 @@
  @return val を持つノードをすべて削除した後のリストの先頭ノード
  */
 
-// ListNodeの定義
-    class ListNode {
-        int val;
-        ListNode next;
-        ListNode() {}
-        ListNode(int val) { this.val = val; }
-        ListNode(int val, ListNode next) { this.val = val; this.next = next; }
-    }
-
 public class RemoveLinkedListElements {
   public static ListNode removeElements(ListNode head, int val) {
         ListNode dummy = new ListNode(0); //先頭が削除されても大丈夫なように作成

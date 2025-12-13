@@ -5,11 +5,6 @@
    * @param 昇順のソートされたリスト
    * @retrun 重複のないリスト
    */
-  class ListNode {
-    int val;
-    ListNode next;
-    ListNode(int x) { val = x; }
-  }
 
 public class RemoveDuplicatesfromSortedList {
 
