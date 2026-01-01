@@ -22,7 +22,7 @@ public class ReNumbersOfGoodPairs {
     return count;
     }
     public static void main(String[] args) {
-        NumbersOfGoodPairs solution = new NumbersOfGoodPairs();
+        ReNumbersOfGoodPairs solution = new ReNumbersOfGoodPairs();
 
         // testcase1
         int[] nums1 = {1,2,3,1,1,3}; // output : 4
