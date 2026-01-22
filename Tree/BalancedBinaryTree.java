@@ -1,6 +1,6 @@
 package LeetCode.Tree;
 
-public class ConvertSortedArray {
+public class BalancedBinaryTree {
     public boolean isBalanced(TreeNode root) {
         // ①base case
         if(root == null) return true;
@@ -32,7 +32,7 @@ public class ConvertSortedArray {
     }
 
     public static void main(String[] args) {
-        ConvertSortedArray solution = new ConvertSortedArray();
+        BalancedBinaryTree solution = new BalancedBinaryTree();
 
         // testcase1
         // 入力: root = [3,9,20,null,null,15,7]
