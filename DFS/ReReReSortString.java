@@ -23,7 +23,7 @@ public class ReReReSortString {
                     count[i]--;
                 }
             }
-            return result.toString();
         }
+        return result.toString();
     }
 }
